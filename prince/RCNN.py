@@ -5,9 +5,9 @@ import torch.nn as nn
 from torch.autograd import Variable
 from torch.nn import functional as F
 
-class RCNN_MTL(nn.Module):
+class RCNN(nn.Module):
 	def __init__(self, batch_size, output_size,output_size2, hidden_size, vocab_size, embedding_length, weights):
-		super(RCNN_MTL, self).__init__()
+		super(RCNN, self).__init__()
 		
 		"""
 		Arguments
